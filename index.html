@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Project 80</title>
+
+    <style>
+        .line{
+            height: 1px;
+            background-color: black;
+        }
+
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
+
+    <section id="add_name">
+        <h1>
+            Guest list
+        </h1>
+
+        <br><br>
+
+        <input type="text" id="add_name_input" placeholder="Names to Add here">
+<br><br>
+        <button class="btn btn-success" onclick="add_name_btn()">Add Name</button>
+    </section>
+
+    <hr class="line">
+
+
+    <section id="show_names">
+        <div id="names_display">
+
+        </div>
+    </section>
+
+    <hr class="line">
+
+
+    <section id="serach_names">
+        <h1>Find in List</h1>
+        <br><br>
+        <input type="text" id="search_name_input" placeholder="Name to Search here">
+
+        <br><br>
+
+        <button class="btn btn-primary" onclick="search_names_btn()">Search Name</button>
+<br><br>
+        <h4 id="name_found"></h4>
+    </section>
+</body>
+</html>
